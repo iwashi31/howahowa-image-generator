@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>circlemix</title>
+  <script type="text/javascript" src="js/LZWEncoder.js"></script>
+  <script type="text/javascript" src="js/NeuQuant.js"></script>
+  <script type="text/javascript" src="js/GIFEncoder.js"></script>
+  <script type="text/javascript" src="js/b64.js"></script>
+</head>
+<body>
+  <input type="file" id="file-input">
+  <div id="control-buttons" style="display: none;">
+    <button id="button-start">start!</button>
+    <button id="button-rewind">rewind!</button>
+    <button id="button-stop" style="display: none;">stop!</button>
+  </div>
+  <button id="button-save-image">save image</button>
+  <button id="button-save-gif">save animated gif</button>
+  <span id="circle-count">N = <span id="circle-count-text">0</span></span>
+  <span id="progress" style="display: none;">GIF変換進捗: <span id="progress-text">0</span>%</span>
+  <br>
+  <canvas id="canvas" style="display: none;"></canvas>
+  <canvas id="canvas2" style="display: none;"></canvas>
+  <script src="dist/circlemix.js"></script>
+</body>
+</html>
